@@ -1,0 +1,146 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/*- fondo para el body del index color rgb(214, 231, 228)
+-en el encabezado  color naranja
+-en la nav sacaremos los puntos y usaremos color rgb(128, 206, 160)
+- utilizaremos una imagen jpg
+- fondo de formulario color  rgb(233, 233, 175) y letras color azul
+*/
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.inicio{
+    background-color:rgb(214, 231, 228);
+}
+header{
+    align-items: center;
+    padding: 10px;
+    background-color: azure;
+    
+}
+.titulo-inicial{
+    padding: 10px;
+    color:orange;
+  font-family: fantasy;
+  text-align: center;
+ 
+}
+
+nav{
+    display: flex;
+ justify-content: center;
+}
+
+.lista{ 
+    display: flex;
+    gap: 80px;
+}
+.lista li a{
+   color:rgb(128, 206, 160);
+}
+.bars{
+    display: none;
+}
+.contenido{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(60, 192, 148);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.contenidoimg{
+    padding: 20px;
+    text-align: center;
+}
+.imagen{
+    
+    width: 300px;
+    height: 300px;
+    filter: opacity(0.8);
+
+    
+}
+footer{
+    display: flex;
+    padding: 10px;
+    margin-top: auto;
+    border: 1px bisque solid;
+   background-color: bisque;
+   height: 50px;
+   justify-content: center;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   color: rgb(124, 202, 176);
+
+} 
+@media screen and (max-width:500px){
+    .bars{
+        display: block;
+    }
+    .nav{
+        display: none;
+    }
+}
+    
+@media screen and (min-width:992px) {
+    header{
+        background-color: bisque;
+    }
+    .lista li a{
+        color:brown;
+    
+}
+.contenido{
+    color: rgba(165, 45, 45, 0.486);
+}
+footer{
+    background-color: rgba(165, 42, 42, 0.432);
+    color: rgb(224, 66, 9);
+}
+}
+.registro{
+   background-image: url(../matero1.jpeg);
+  
+}
+.titulo{
+    padding: 8px;
+    margin: 40px;
+    color:white;
+    font-family: sans-serif;
+    
+}
+.formulario{
+    padding: 8px;
+    margin: 40px;
+    width: 100px;
+    color:white;
+    font-family: cursive;
+    font-size:small;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
